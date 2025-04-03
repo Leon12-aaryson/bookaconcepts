@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           <div>
             <div className="text-xl font-bold mb-4">
-              <span className="text-secondary">ULCO</span> Services
+              <span className="text-secondary">BOOKA</span> Concepts
             </div>
             <p className="text-neutral-100/80 mb-6">
               Your trusted partner for all automotive, mechanical, and service needs in Uganda.
@@ -64,7 +64,7 @@ const Footer = () => {
               </li>
               <li className="flex items-start">
                 <Mail className="mt-1 mr-3 text-secondary h-4 w-4" />
-                <span className="text-neutral-100/80">info@ulcoservices.com</span>
+                <span className="text-neutral-100/80">info@bookaconcepts.com</span>
               </li>
               <li className="flex items-start">
                 <Clock className="mt-1 mr-3 text-secondary h-4 w-4" />
@@ -75,7 +75,7 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-primary-600 pt-6 mt-8 text-center text-neutral-100/80 text-sm">
-          <p>&copy; {new Date().getFullYear()} ULCO Services. All Rights Reserved.</p>
+          <p>&copy; {new Date().getFullYear()} BOOKA Concepts. All Rights Reserved.</p>
         </div>
       </div>
     </footer>

@@ -228,8 +228,8 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <h4 className="font-medium mb-1">Email</h4>
-                    <p className="text-neutral-600">info@ulcoservices.com</p>
-                    <p className="text-neutral-600">support@ulcoservices.com</p>
+                    <p className="text-neutral-600">info@bookaconcepts.com</p>
+                    <p className="text-neutral-600">support@bookaconcepts.com</p>
                   </div>
                 </div>
                 

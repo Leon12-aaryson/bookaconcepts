@@ -21,7 +21,7 @@ const Header = () => {
           <div className="flex items-center">
             <Link href="/" className="flex items-center">
               <div className="text-primary font-bold text-xl sm:text-2xl">
-                <span className="text-secondary">ULCO</span> Services
+                <span className="text-secondary">BOOKA</span> Concepts
               </div>
             </Link>
           </div>
