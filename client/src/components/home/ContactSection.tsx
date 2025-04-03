@@ -185,7 +185,7 @@ const ContactSection = () => {
                   
                   <Button 
                     type="submit" 
-                    className="w-full bg-secondary hover:bg-secondary/90 text-white"
+                    className="w-full bg-orange-600 hover:bg-orange-600/90 text-white"
                     disabled={mutation.isPending}
                   >
                     {mutation.isPending ? "Sending..." : "Send Message"}

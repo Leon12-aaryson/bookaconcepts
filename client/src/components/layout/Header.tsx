@@ -21,24 +21,24 @@ const Header = () => {
           <div className="flex items-center">
             <Link href="/" className="flex items-center">
               <div className="text-primary font-bold text-xl sm:text-2xl">
-                <span className="text-secondary">BOOKA</span> Concepts
+                <span className="text-orange-600">BOOKA</span> Concepts
               </div>
             </Link>
           </div>
           
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
-            <a href="#home" className="text-neutral-700 hover:text-secondary font-medium">Home</a>
-            <a href="#services" className="text-neutral-700 hover:text-secondary font-medium">Services</a>
-            <a href="#about" className="text-neutral-700 hover:text-secondary font-medium">About Us</a>
-            <a href="#gallery" className="text-neutral-700 hover:text-secondary font-medium">Gallery</a>
-            <a href="#contact" className="text-neutral-700 hover:text-secondary font-medium">Contact</a>
+            <a href="#home" className="text-neutral-700 hover:text-orange-600 font-medium">Home</a>
+            <a href="#services" className="text-neutral-700 hover:text-orange-600 font-medium">Services</a>
+            <a href="#about" className="text-neutral-700 hover:text-orange-600 font-medium">About Us</a>
+            <a href="#gallery" className="text-neutral-700 hover:text-orange-600 font-medium">Gallery</a>
+            <a href="#contact" className="text-neutral-700 hover:text-orange-600 font-medium">Contact</a>
           </nav>
           
           {/* CTA Button */}
           <div className="hidden md:block">
             <a href="#contact">
-              <Button className="bg-secondary hover:bg-secondary/90 text-white">
+              <Button className="bg-orange-600 hover:bg-orange-600/90 text-white">
                 Get a Quote
               </Button>
             </a>

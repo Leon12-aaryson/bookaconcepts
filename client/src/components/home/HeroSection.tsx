@@ -13,7 +13,7 @@ const HeroSection = () => {
         </p>
         <div className="flex flex-col sm:flex-row gap-4">
           <a href="#services">
-            <Button className="bg-secondary hover:bg-secondary/90 text-white py-3 px-8 rounded-md text-center">
+            <Button className="bg-orange-600 hover:bg-secondary/90 text-white py-3 px-8 rounded-md text-center">
               Our Services
             </Button>
           </a>

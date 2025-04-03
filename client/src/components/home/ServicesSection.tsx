@@ -20,7 +20,7 @@ const ServicesSection = () => {
             >
               <CardContent className="p-6">
                 <div className="flex items-start">
-                  <div className="text-secondary mr-4">
+                  <div className="text-orange-600 mr-4">
                     <service.icon className="h-5 w-5" />
                   </div>
                   <div>
