@@ -12,11 +12,11 @@ const CTASection = () => {
           </div>
           <div className="flex flex-col sm:flex-row gap-3">
             <a href="#contact">
-              <Button className="bg-secondary hover:bg-secondary/90 text-white py-3 px-6 rounded-md text-center">
+              <Button className="bg-orange-600 hover:bg-orange-600/90 text-white py-3 px-6 rounded-md text-center">
                 Contact Us
               </Button>
             </a>
-            <a href="tel:+256700000000">
+            <a href="tel:+256705927418">
               <Button className="bg-primary hover:bg-primary/90 text-white py-3 px-6 rounded-md text-center">
                 <Phone className="h-4 w-4 mr-2" /> Call Now
               </Button>

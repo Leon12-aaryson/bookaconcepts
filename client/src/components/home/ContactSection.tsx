@@ -217,8 +217,9 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <h4 className="font-medium mb-1">Phone</h4>
-                    <p className="text-neutral-600">+256 700 000 000</p>
-                    <p className="text-neutral-600">+256 780 000 000</p>
+                    <p className="text-neutral-600">+256 705 927418</p>
+                    <p className="text-neutral-600">+256 785 951304</p>
+                    <p className="text-neutral-600">+256 783 751409</p>
                   </div>
                 </div>
                 
