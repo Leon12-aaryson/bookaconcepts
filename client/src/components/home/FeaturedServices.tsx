@@ -24,7 +24,7 @@ const FeaturedServices = () => {
               <p className="text-neutral-600 mb-4">
                 Professional installation, repair, and maintenance services for all types of air conditioning and refrigeration systems.
               </p>
-              <a href="#contact" className="text-secondary font-medium hover:text-secondary/80 flex items-center">
+              <a href="#contact" className="text-orange-600 font-medium hover:text-orange-600/80 flex items-center">
                 Learn More
                 <ChevronRight className="w-4 h-4 ml-1" />
               </a>
@@ -41,7 +41,7 @@ const FeaturedServices = () => {
               <p className="text-neutral-600 mb-4">
                 Complete mechanical repairs, maintenance, and diagnostics for all vehicle makes and models.
               </p>
-              <a href="#contact" className="text-secondary font-medium hover:text-secondary/80 flex items-center">
+              <a href="#contact" className="text-orange-600 font-medium hover:text-orange-600/80 flex items-center">
                 Learn More
                 <ChevronRight className="w-4 h-4 ml-1" />
               </a>
@@ -58,7 +58,7 @@ const FeaturedServices = () => {
               <p className="text-neutral-600 mb-4">
                 Specialized services including pop top roof cuts, tourist vehicle seats, and Landcruiser extensions.
               </p>
-              <a href="#contact" className="text-secondary font-medium hover:text-secondary/80 flex items-center">
+              <a href="#contact" className="text-orange-600 font-medium hover:text-orange-600/80 flex items-center">
                 Learn More
                 <ChevronRight className="w-4 h-4 ml-1" />
               </a>
