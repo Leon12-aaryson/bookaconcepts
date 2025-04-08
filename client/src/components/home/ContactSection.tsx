@@ -37,7 +37,7 @@ type FormValues = z.infer<typeof formSchema>;
 
 const ContactSection = () => {
   const { toast } = useToast();
-  
+
   const form = useForm<FormValues>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -83,12 +83,12 @@ const ContactSection = () => {
             Reach out to us for any inquiries or to schedule a service. We're here to help!
           </p>
         </div>
-        
+
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div>
             <div className="bg-gray-50 rounded-lg p-6 mb-8">
               <h3 className="text-xl font-semibold text-primary mb-6">Get in Touch</h3>
-              
+
               {/* Contact Form */}
               <Form {...form}>
                 <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
@@ -105,7 +105,7 @@ const ContactSection = () => {
                       </FormItem>
                     )}
                   />
-                  
+
                   <FormField
                     control={form.control}
                     name="email"
@@ -119,7 +119,7 @@ const ContactSection = () => {
                       </FormItem>
                     )}
                   />
-                  
+
                   <FormField
                     control={form.control}
                     name="phone"
@@ -133,15 +133,15 @@ const ContactSection = () => {
                       </FormItem>
                     )}
                   />
-                  
+
                   <FormField
                     control={form.control}
                     name="service"
                     render={({ field }) => (
                       <FormItem>
                         <FormLabel>Service Required</FormLabel>
-                        <Select 
-                          onValueChange={field.onChange} 
+                        <Select
+                          onValueChange={field.onChange}
                           defaultValue={field.value}
                         >
                           <FormControl>
@@ -164,7 +164,7 @@ const ContactSection = () => {
                       </FormItem>
                     )}
                   />
-                  
+
                   <FormField
                     control={form.control}
                     name="message"
@@ -172,19 +172,19 @@ const ContactSection = () => {
                       <FormItem>
                         <FormLabel>Message</FormLabel>
                         <FormControl>
-                          <Textarea 
-                            placeholder="How can we help you?" 
+                          <Textarea
+                            placeholder="How can we help you?"
                             rows={4}
-                            {...field} 
+                            {...field}
                           />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
                     )}
                   />
-                  
-                  <Button 
-                    type="submit" 
+
+                  <Button
+                    type="submit"
                     className="w-full bg-orange-600 hover:bg-orange-600/90 text-white"
                     disabled={mutation.isPending}
                   >
@@ -194,12 +194,12 @@ const ContactSection = () => {
               </Form>
             </div>
           </div>
-          
+
           <div>
             {/* Contact Info */}
             <div className="bg-gray-50 rounded-lg p-6 mb-8">
               <h3 className="text-xl font-semibold text-primary mb-6">Contact Information</h3>
-              
+
               <div className="space-y-4">
                 <div className="flex items-start">
                   <div className="text-secondary mr-4 mt-1">
@@ -207,10 +207,10 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <h4 className="font-medium mb-1">Address</h4>
-                    <p className="text-neutral-600">123 Kampala Road, Kampala, Uganda</p>
+                    <p className="text-neutral-600">P. O.Box 135979 Kampala Uganda</p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start">
                   <div className="text-secondary mr-4 mt-1">
                     <Phone className="h-5 w-5" />
@@ -222,7 +222,7 @@ const ContactSection = () => {
                     <p className="text-neutral-600">+256 783 751409</p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start">
                   <div className="text-secondary mr-4 mt-1">
                     <Mail className="h-5 w-5" />
@@ -233,7 +233,7 @@ const ContactSection = () => {
                     <p className="text-neutral-600">support@bookaconcepts.com</p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start">
                   <div className="text-secondary mr-4 mt-1">
                     <Clock className="h-5 w-5" />
@@ -246,7 +246,7 @@ const ContactSection = () => {
                   </div>
                 </div>
               </div>
-              
+
               <div className="mt-8">
                 <h4 className="font-medium mb-3">Follow Us</h4>
                 <div className="flex space-x-4">
@@ -265,16 +265,10 @@ const ContactSection = () => {
                 </div>
               </div>
             </div>
-            
+
             {/* Map */}
             <div className="bg-gray-50 rounded-lg overflow-hidden h-80">
-              <div className="w-full h-full bg-gray-200 flex items-center justify-center">
-                <div className="text-center p-4">
-                  <MapPin className="h-10 w-10 text-gray-400 mx-auto mb-2" />
-                  <p className="text-neutral-600">Map will be integrated here</p>
-                  <p className="text-sm text-neutral-600 mt-2">123 Kampala Road, Kampala, Uganda</p>
-                </div>
-              </div>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d4217.2390390941555!2d32.57515525527347!3d0.33253695717447845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1sen!2sug!4v1744095100041!5m2!1sen!2sug" width="600" height="450" style={{ border: 0 }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
         </div>

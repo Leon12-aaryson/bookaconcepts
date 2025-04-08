@@ -2,6 +2,8 @@ import { useState } from "react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import Logo from "../../images/logo.png";
+
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -20,9 +22,11 @@ const Header = () => {
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center">
             <Link href="/" className="flex items-center">
-              <div className="text-primary font-bold text-xl sm:text-2xl">
-                <span className="text-orange-600">BOOKA</span> Concepts
-              </div>
+              <img 
+              src={Logo} 
+              alt="BOOKA Concepts Logo" 
+              className="h-8 sm:h-10"
+              />
             </Link>
           </div>
           
@@ -103,7 +107,7 @@ const Header = () => {
               </a>
               <a 
                 href="#contact" 
-                className="bg-secondary hover:bg-secondary/90 text-white font-medium py-2 px-4 rounded-md inline-block transition duration-300 mt-2"
+                className="bg-orange-600 hover:bg-orange-600/90 text-white font-medium py-2 px-4 rounded-md inline-block transition duration-300 mt-2"
                 onClick={closeMobileMenu}
               >
                 Get a Quote
