@@ -1,5 +1,6 @@
 import React from 'react';
 import bookaImage from '@/images/booka.jpg';
+import workImage from '@/images/work.png';
 
 
 const AboutSection = () => {
@@ -43,7 +44,7 @@ const AboutSection = () => {
           <div className="relative">
             <div className="bg-primary h-72 md:h-96 rounded-lg overflow-hidden relative">
               <img
-                src={bookaImage}
+                src={workImage}
                 alt="Workshop"
                 className="w-full h-full object-cover"
               />

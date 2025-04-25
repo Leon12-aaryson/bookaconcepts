@@ -1,5 +1,4 @@
 import { Facebook, Twitter, Instagram, Linkedin, MapPin, Phone, Mail, Clock } from "lucide-react";
-import { Link } from "wouter";
 
 const Footer = () => {
   return (
@@ -37,6 +36,7 @@ const Footer = () => {
               <li><a href="#about" className="text-neutral-100/80 hover:opacity-100 hover:text-secondary transition duration-300">About Us</a></li>
               <li><a href="#gallery" className="text-neutral-100/80 hover:opacity-100 hover:text-secondary transition duration-300">Gallery</a></li>
               <li><a href="#contact" className="text-neutral-100/80 hover:opacity-100 hover:text-secondary transition duration-300">Contact</a></li>
+              <li><a href="#contact" className="text-neutral-100/80 hover:opacity-100 hover:text-secondary transition duration-300">Careers</a></li>
             </ul>
           </div>
           

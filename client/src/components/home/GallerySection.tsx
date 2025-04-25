@@ -1,6 +1,6 @@
 import image1 from "@/images/booka.jpg";
-import image2 from "@/images/booka.jpg";
-import image3 from "@/images/booka.jpg";
+import image2 from "@/images/work.png";
+import image3 from "@/images/work1.png";
 
 const galleryItems = [
   { id: 1, title: "Project 1", description: "Description for Project 1", image: image1 },

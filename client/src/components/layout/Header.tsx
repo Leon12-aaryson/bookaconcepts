@@ -22,14 +22,14 @@ const Header = () => {
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center">
             <Link href="/" className="flex items-center">
-              <img 
-              src={Logo} 
-              alt="BOOKA Concepts Logo" 
-              className="h-8 sm:h-10"
+              <img
+                src={Logo}
+                alt="BOOKA Concepts Logo"
+                className="h-8 sm:h-10"
               />
             </Link>
           </div>
-          
+
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
             <a href="#home" className="text-neutral-700 hover:text-orange-600 font-medium">Home</a>
@@ -37,8 +37,9 @@ const Header = () => {
             <a href="#about" className="text-neutral-700 hover:text-orange-600 font-medium">About Us</a>
             <a href="#gallery" className="text-neutral-700 hover:text-orange-600 font-medium">Gallery</a>
             <a href="#contact" className="text-neutral-700 hover:text-orange-600 font-medium">Contact</a>
+            <a href="#contact" className="text-neutral-700 hover:text-orange-600 font-medium">Careers</a>
           </nav>
-          
+
           {/* CTA Button */}
           <div className="hidden md:block">
             <a href="#contact">
@@ -47,7 +48,7 @@ const Header = () => {
               </Button>
             </a>
           </div>
-          
+
           {/* Mobile menu button */}
           <div className="md:hidden">
             <Button
@@ -65,48 +66,55 @@ const Header = () => {
             </Button>
           </div>
         </div>
-        
+
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
           <div className="md:hidden pb-4">
             <nav className="flex flex-col space-y-3">
-              <a 
-                href="#home" 
+              <a
+                href="#home"
                 className="text-neutral-700 hover:text-secondary font-medium py-2"
                 onClick={closeMobileMenu}
               >
                 Home
               </a>
-              <a 
-                href="#services" 
+              <a
+                href="#services"
                 className="text-neutral-700 hover:text-secondary font-medium py-2"
                 onClick={closeMobileMenu}
               >
                 Services
               </a>
-              <a 
-                href="#about" 
+              <a
+                href="#about"
                 className="text-neutral-700 hover:text-secondary font-medium py-2"
                 onClick={closeMobileMenu}
               >
                 About Us
               </a>
-              <a 
-                href="#gallery" 
+              <a
+                href="#gallery"
                 className="text-neutral-700 hover:text-secondary font-medium py-2"
                 onClick={closeMobileMenu}
               >
                 Gallery
               </a>
-              <a 
-                href="#contact" 
+              <a
+                href="#contact"
                 className="text-neutral-700 hover:text-secondary font-medium py-2"
                 onClick={closeMobileMenu}
               >
                 Contact
               </a>
-              <a 
-                href="#contact" 
+              <a
+                href="#contact"
+                className="text-neutral-700 hover:text-secondary font-medium py-2"
+                onClick={closeMobileMenu}
+              >
+                Careers
+              </a>
+              <a
+                href="#contact"
                 className="bg-orange-600 hover:bg-orange-600/90 text-white font-medium py-2 px-4 rounded-md inline-block transition duration-300 mt-2"
                 onClick={closeMobileMenu}
               >
