@@ -1,15 +1,14 @@
 import { useState } from "react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
-import { Menu, X } from "lucide-react";
+import { CircleX, Menu, X } from "lucide-react";
 import Logo from "../../images/logo.png";
-
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const toggleMobileMenu = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen);
+    setIsMobileMenuOpen((prevState) => !prevState); // Ensure state toggles correctly
   };
 
   const closeMobileMenu = () => {
@@ -25,7 +24,7 @@ const Header = () => {
               <img
                 src={Logo}
                 alt="BOOKA Concepts Logo"
-                className="h-8 sm:h-10"
+                className="h-10 sm:h-16"
               />
             </Link>
           </div>
@@ -39,7 +38,6 @@ const Header = () => {
             <a href="#contact" className="text-neutral-700 hover:text-orange-600 font-medium">Contact</a>
             <a href="#contact" className="text-neutral-700 hover:text-orange-600 font-medium">Careers</a>
           </nav>
-
           {/* CTA Button */}
           <div className="hidden md:block">
             <a href="#contact">
@@ -48,7 +46,6 @@ const Header = () => {
               </Button>
             </a>
           </div>
-
           {/* Mobile menu button */}
           <div className="md:hidden">
             <Button
@@ -56,12 +53,10 @@ const Header = () => {
               size="icon"
               onClick={toggleMobileMenu}
               aria-label="Toggle menu"
-              className="text-neutral-700 hover:text-secondary"
+              className="text-neutral-700 hover:text-black"
             >
               {isMobileMenuOpen ? (
-                <X className="h-6 w-6" />
-              ) : (
-                <Menu className="h-6 w-6" />
+                <CircleX className="h-10 w-10" aria-hidden="true" />) : (<Menu className="h-6 w-6" aria-hidden="true" />
               )}
             </Button>
           </div>
