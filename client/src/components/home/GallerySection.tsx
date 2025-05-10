@@ -5,7 +5,7 @@ import image3 from "@/images/work1.png";
 const galleryItems = [
   { id: 1, title: "Project 1", description: "Description for Project 1", image: image1 },
   { id: 2, title: "Project 2", description: "Description for Project 2", image: image2 },
-  { id: 3, title: "Project 3", description: "Description for Project 3", image: image3 },
+  { id: 3, title: "AC Refilling", description: "Recharge Your Comfort: Expert AC Refilling Services for Optimal Cooling Performance", image: image3 },
 ];
 
 const GallerySection = () => {
@@ -18,7 +18,7 @@ const GallerySection = () => {
             Take a look at some of our recent projects and services we've completed for our satisfied customers.
           </p>
         </div>
-        
+
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {galleryItems.map((item) => (
             <div key={item.id} className="relative overflow-hidden rounded-lg group h-64">
