@@ -1,7 +1,13 @@
+import { useState } from "react";
 import { services } from "@/lib/serviceData";
 import { Card, CardContent } from "@/components/ui/card";
 
 const ServicesSection = () => {
+  const [showAll, setShowAll] = useState(false);
+
+  // Determine the number of services to display
+  const visibleServices = showAll ? services : services.slice(0, 6); // 2 rows of 3 services each
+
   return (
     <section id="services" className="py-16 bg-gray-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -13,7 +19,7 @@ const ServicesSection = () => {
         </div>
         
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {services.map((service) => (
+          {visibleServices.map((service) => (
             <Card 
               key={service.id}
               className="bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300"
@@ -31,6 +37,16 @@ const ServicesSection = () => {
               </CardContent>
             </Card>
           ))}
+        </div>
+
+        {/* Read More Button */}
+        <div className="text-center mt-8">
+          <button
+            onClick={() => setShowAll(!showAll)}
+            className="px-6 py-2 text-white bg-primary rounded-lg shadow hover:bg-primary-dark transition-colors duration-300"
+          >
+            {showAll ? "Show Less" : "Read More"}
+          </button>
         </div>
       </div>
     </section>
