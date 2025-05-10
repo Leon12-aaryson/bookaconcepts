@@ -3,8 +3,18 @@ import image2 from "@/images/work.png";
 import image3 from "@/images/work1.png";
 
 const galleryItems = [
-  { id: 1, title: "Project 1", description: "Description for Project 1", image: image1 },
-  { id: 2, title: "Project 2", description: "Description for Project 2", image: image2 },
+  {
+    id: 1,
+    title: "HVAC Installation & Maintenance",
+    description: "Professional heating, ventilation, and air conditioning solutions for residential, commercial, and industrial needs.",
+    image: image1
+  },
+  {
+    id: 2,
+    title: "Expert Engine Repair",
+    description: "Specialized engine diagnostics and repair services to restore optimal performance and reliability.",
+    image: image2
+  },
   { id: 3, title: "AC Refilling", description: "Recharge Your Comfort: Expert AC Refilling Services for Optimal Cooling Performance", image: image3 },
 ];
 

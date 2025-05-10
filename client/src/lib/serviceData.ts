@@ -37,10 +37,16 @@ export const services: Service[] = [
     icon: Snowflake
   },
   {
-    id: "mechanical-workshop",
-    title: "General Mechanical Workshop",
-    description: "Complete mechanical services including diagnostics, repairs, and maintenance for all vehicle types.",
-    icon: Wrench
+    id: "vehicle-customization",
+    title: "Tour & Safari Vehicle Customization",
+    description: "Comprehensive vehicle modification services including pop top roofs, custom seats, spraying, guards, racks, and Landcruiser extensions—perfectly tailored for safari and tourism needs.",
+    icon: Car
+  },
+  {
+    id: "vehicle-maintenance-solutions",
+    title: "Vehicle Maintenance & Spare Parts",
+    description: "Integrated vehicle care solutions offering mechanical and electrical repairs, towing support, and genuine spare parts for all vehicle types.",
+    icon: Cog
   },
   {
     id: "generator-services",
@@ -49,34 +55,16 @@ export const services: Service[] = [
     icon: Plug
   },
   {
-    id: "spare-parts",
-    title: "Genuine Spare Parts",
-    description: "Supply of high-quality, genuine spare parts for all vehicle makes and models.",
-    icon: Cog
-  },
-  {
-    id: "ambulance-services",
-    title: "Ambulance Services",
-    description: "Professional and reliable ambulance services for emergency medical transportation.",
+    id: "emergency-care-training",
+    title: "Emergency Care & Training",
+    description: "Reliable ambulance services and certified first aid training for individuals and organizations, ensuring preparedness in medical emergencies.",
     icon: Ambulance
   },
   {
-    id: "first-aid-training",
-    title: "First Aid Trainings",
-    description: "Comprehensive first aid training programs for individuals and organizations.",
-    icon: Heart
-  },
-  {
-    id: "home-care-nursing",
-    title: "Home Based Care Nursing",
-    description: "Professional nursing care services provided in the comfort of your home.",
+    id: "home-bedside-nursing",
+    title: "Home & Bedside Nursing",
+    description: "Comprehensive nursing care provided at home or bedside for patients needing personalized attention and medical support.",
     icon: UserRound
-  },
-  {
-    id: "bedside-nursing",
-    title: "Bed Side Nursing",
-    description: "Specialized nursing care for patients requiring constant bedside attention.",
-    icon: Bed
   },
   {
     id: "electrical-services",
@@ -91,58 +79,10 @@ export const services: Service[] = [
     icon: FlameKindling
   },
   {
-    id: "pop-top-roof",
-    title: "Pop Top Roof Cut",
-    description: "Professional roof modification services for vehicles, especially for safari and tourism.",
-    icon: Scissors
-  },
-  {
-    id: "tourist-vehicle-seats",
-    title: "Tourist Vehicle Seats",
-    description: "Custom seating solutions for tourism and safari vehicles.",
-    icon: Armchair
-  },
-  {
-    id: "spraying",
-    title: "Spraying",
-    description: "Professional vehicle painting and spraying services with quality finishes.",
-    icon: Paintbrush
-  },
-  {
-    id: "guards-racks",
-    title: "Guards & Racks",
-    description: "Custom fabrication of vehicle guards and roof racks for enhanced functionality.",
-    icon: Shield
-  },
-  {
-    id: "landcruiser-extension",
-    title: "Landcruiser Extension",
-    description: "Specialized Landcruiser modification services for extended functionality.",
-    icon: Car
-  },
-  {
-    id: "auto-electric",
-    title: "Auto-Electric",
-    description: "Electrical system diagnosis, repair, and maintenance for all vehicle types.",
-    icon: Battery
-  },
-  {
     id: "vocational-training",
     title: "Vocational Trainings",
     description: "Practical vocational training programs in automotive and mechanical fields.",
     icon: GraduationCap
-  },
-  {
-    id: "towing-service",
-    title: "Towing/Breakdown Service",
-    description: "24/7 towing and breakdown assistance for stranded vehicles.",
-    icon: Truck
-  },
-  {
-    id: "driving-license",
-    title: "Driving License Processing",
-    description: "Assistance with driving license processing, extension, and renewal.",
-    icon: BadgeAlert
   },
   {
     id: "ppe",
@@ -155,6 +95,12 @@ export const services: Service[] = [
     title: "Logistics",
     description: "Comprehensive logistics solutions for businesses and individuals.",
     icon: PackageOpen
+  },
+  {
+    id: "production",
+    title: "Production & Supply",
+    description: "Manufacturing and supply of various products tailored to client specifications.",
+    icon: Truck
   }
 ];
 
